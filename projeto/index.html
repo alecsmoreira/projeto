@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <title>Projeto Hammer</title>
+        <style>
+            body {
+          background-image: url('./imagem/churrasco.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        </style>
+    </head>
+
+    <body>
+        <header class="logo">
+            <main>
+                <div class="logo">
+                    <a href="https://www.wlgrupo.com/hammer"> <img src="./imagem/logo.png"></a>
+                </div>
+            </main>
+        </header>
+
+        
+        <!-- Montagem do formulário-->
+        <form name="Formulário" method="post" id="formulario">
+            <div class="box">
+                 <p>  
+                <label>
+                    <span>Nome Completo</span>
+                    <input type="text" class="input_text"  required name="nome" id="name"/>
+                </label>
+            </p> 
+            <p>
+                <label>
+                    <span>Acompanhante</span>
+                    <input type="radio" name="Acompanhante" value="Masculino"> Sim
+                    <input type="radio" name="Acompanhante" id="Faminino" value="Feminino"> Não </label>
+                </label>
+            </p> 
+            <p>
+                <label>
+                    <span>Contato</span>
+                    <input pattern="[0-9]" type="text" maxlength="9" class="form-control phone-ddd-mask" placeholder="(00) 0000-0000" required>
+                    </label>
+                </label> 
+            </p>   
+            <p>
+                <label>
+                    <input type="button" class="button" value="Enviar" />
+                </label>
+            </p> 
+            </div>
+        </form>
+    </body>
+</html>
